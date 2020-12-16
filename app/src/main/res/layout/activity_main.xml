@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="30dp"
+        >
+
+        <ImageView
+            android:id="@+id/doraemonImg"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/doraemon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="18dp"
+            android:text="Doraemon"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@id/doraemonImg"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:text="Constraint layout. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et tortor mollis dui consectetur dictum. Praesent lacinia convallis mattis. Integer vitae neque porttitor, volutpat sapien nec, viverra nibh. Praesent imperdiet, neque nec rutrum mattis, velit elit suscipit risus, id fermentum sem lectus non risus. Nulla semper varius ante, at tincidunt massa scelerisque sit amet. Vestibulum at feugiat erat, et pharetra elit. Suspendisse potenti. Proin semper bibendum ante, in volutpat elit hendrerit vitae. Nulla id dignissim felis, venenatis consequat diam. In vitae neque semper, elementum neque vitae,"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doraemonImg">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/CastandCrew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="Cast &amp; Crew"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/deskripsi" />
+
+        <TextView
+            android:id="@+id/direktor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="Director"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_weight="0.3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/CastandCrew">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/CastText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:text="Cast"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_weight="0.3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/direktor">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Dave Wilson"
+            app:layout_constraintBaseline_toBaselineOf="@id/direktor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/direktor">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/castValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="Vin Diesel, Toby Kebbel"
+            app:layout_constraintBaseline_toBaselineOf="@id/CastText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/CastText">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="18dp"
+            android:layout_marginTop="32dp"
+            android:text="Rent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/castValue" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
